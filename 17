@@ -1,0 +1,58 @@
+
+/******************************************************************************
+    A 
+    B B 
+   C C C 
+  D D D D 
+ E E E E E 
+F F F F F F 
+ 1 2 3 4 5 
+  1 2 3 4 
+   1 2 3 
+    1 2 
+     1 
+
+*******************************************************************************/
+#include <stdio.h>
+
+
+int main()
+
+{
+    int n;
+    printf("enter numeber :");
+    scanf("%d",&n);
+    
+    for(int i=1; i<=n; i++)
+    {
+        for(int j=i; j<n; j++)
+        {
+            printf(" ");
+        }
+       for(int k=1; k<=i; k++)
+       {   
+           printf("%c ",i+64);
+       }
+       
+       
+        printf("\n");
+    }
+    
+    
+    for(int i=n-1; i>=1; i--)
+    {
+        for(int j=i; j<n; j++)
+        {
+        printf(" ");
+        }
+        for(int k=1; k<=i; k++)
+        {    
+            printf("%d ",k);
+        }
+          
+        printf("\n");
+    }
+    
+    
+    return 0;
+}
